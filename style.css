@@ -1,0 +1,137 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #e0f2fe, #f8fafc);
+}
+.navbar
+{
+    background-color: #3B82F6;
+    color: white;
+    padding: 20px 40px;
+    font-size: 28px;
+    font-weight: 600;
+}
+.container{
+    padding: 10px;
+}
+.book-container{
+    padding: 15px;
+    width: 25%;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    margin: 30px;
+    display: inline-block;
+    vertical-align: top;
+}
+.book-container {
+    transition: 0.3s;
+}
+@media screen and (max-width: 600px) {
+    .book-container {
+    width: 90%;
+    }
+}
+.book-container h2{
+    color: #3B82F6;
+    margin-bottom: 5px; 
+}
+.book-container h5{
+    color: gray;
+    margin-bottom: 10px;
+} 
+.book-container button{
+    background-color: #ef4444;
+    color: white;
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    border: none;
+    margin-top: 10px;
+}
+.book-container:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.add-button{
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: none;
+    background: linear-gradient(135deg, #3B82F6, #6366F1);
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+    box-shadow: 0 15px 30px rgba(59,130,246,0.4);
+    transition: 0.3s;
+}
+.add-button:hover {
+    transform: scale(1.5);
+}
+.pop-overlay{
+    background-color: black;
+    opacity: 0.8;
+    position: absolute;
+    width: 100%;
+    height: 200%;
+    top: 0%;
+    left: 0%;
+    z-index: 1;
+    display: none;
+}
+.pop-overlay {
+    position: fixed;
+    height: 100vh;
+}
+.pop-box{
+    background-color:white;
+    width: 400px;
+    padding: 30px;
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    display: none;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 25px 50px rgba(0,0,0,0.2);
+}
+.pop-box h2 {
+    margin-bottom: 15px;
+    color: #3B82F6;
+}
+.pop-box input,.pop-box textarea{
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+}   
+.pop-box input::placeholder,.pop-box textarea::placeholder{
+    color: gray;
+}
+.pop-box button{
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    border: none;
+    margin: 5px;
+}
+#add-book{
+    background: #3B82F6;
+    color: white;
+}
+#cancel-popup{
+    background:#ef4444;
+    color: white;
+}

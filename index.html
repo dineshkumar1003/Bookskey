@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookskey</title>
+    <link rel="icon" href="img/img.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="script" href="script.js">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar">
+        <h1>Bookskey</h1>
+</div>
+<div class="container">
+   <div class="book-container">
+    <h2>Atomic Habits</h2>
+    <h5>James Clear</h5>
+    <p>
+        Atomic Habits is a powerful self-improvement book that explains how small daily habits can create big success over time. 
+        James Clear teaches that tiny improvements made consistently lead to remarkable results. 
+        The book focuses on building good habits, breaking bad ones, and mastering the tiny behaviors that lead to extraordinary outcomes.
+        It introduces the concept of the 1% improvement rule and explains practical strategies for habit formation.
+    </p>
+    <button  onclick="deletebook(event)">Delete</button>
+</div>
+        <div class="book-container">
+    <h2>Rich Dad Poor Dad</h2>
+    <h5>Robert T. Kiyosaki</h5>
+    <p>
+        Rich Dad Poor Dad is a financial education book that compares two different mindsets about money. 
+        One father (Poor Dad) believes in working hard for money, while the other father (Rich Dad) believes in making money work for you. 
+        The book teaches important lessons about financial literacy, investing, assets, liabilities, and building wealth.
+        It encourages readers to think differently about earning and managing money.
+    </p>
+    <button onclick="deletebook(event)">Delete</button>
+</div>
+</div>
+    <div class="pop-overlay"> 
+</div>
+        <div class="pop-box">
+            <h2>Add Book</h2>
+            <form >
+                <input type="text" placeholder="Book title" id="book-tittle-input">
+                <input type="text" placeholder="Book Author" id="book-author-input">
+                <textarea placeholder="Short Description" id="book-description-input"></textarea>
+                <button id="add-book">ADD</button>
+                <button id="cancel-popup">CANCEL</button>
+            </form>
+</div>
+    <button class="add-button" id="add-popup-button">+</button>
+    <script src="script.js"></script>
+</body>
+</html>
